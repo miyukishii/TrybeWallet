@@ -103,3 +103,11 @@ code {
   margin: 5px 10px 5px 10px;
   color: white;
 }
+
+.table-wallet {
+  width: 100%;
+}
+
+table, th {
+  border: 1px solid black;
+}
