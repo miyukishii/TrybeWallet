@@ -2,7 +2,7 @@
 import { LOGIN_INPUT } from '../actions/index';
 
 const INITAL_STATE = {
-  email: 'not logged in',
+  email: 'Sign In',
 };
 
 const userReducer = (state = INITAL_STATE, action) => {

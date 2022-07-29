@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getCurrencies } from '../redux/actions/index';
+import { getCurrencies, saveWallet } from '../redux/actions/index';
 
 class WalletForm extends Component {
   constructor() {
     super();
     this.state = {
-      valueInput: '',
-      descriptionInput: '',
-      currencyInput: '',
-      methodInput: '',
-      tagInput: '',
+      value: '',
+      description: '',
+      currency: 'USD',
+      method: 'Dinheiro',
+      tag: 'Aimentação',
     };
   }
 
@@ -26,14 +26,27 @@ class WalletForm extends Component {
     });
   };
 
+  handleClick = () => {
+    const { saveWalletState } = this.props;
+    saveWalletState(this.state);
+    this.setState({
+      value: '',
+      description: '',
+      currency: 'USD',
+      method: 'Dinheiro',
+      tag: 'Aimentação',
+    });
+  }
+
   render() {
-    const { valueInput,
-      descriptionInput,
-      currencyInput,
-      methodInput,
-      tagInput } = this.state;
+    const {
+      value,
+      description,
+      currency,
+      method,
+      tag } = this.state;
     const { currencies } = this.props;
-    console.log(currencies);
+    // console.log(currencies);
     return (
       <form className="wallet-form">
         <label htmlFor="valueInput">
@@ -42,8 +55,8 @@ class WalletForm extends Component {
             data-testid="value-input"
             type="text"
             id="valueInput"
-            name="valueInput"
-            value={ valueInput }
+            name="value"
+            value={ value }
             onChange={ this.handleChange }
           />
         </label>
@@ -53,8 +66,8 @@ class WalletForm extends Component {
             data-testid="description-input"
             type="text"
             id="descriptionInput"
-            name="descriptionInput"
-            value={ descriptionInput }
+            name="description"
+            value={ description }
             onChange={ this.handleChange }
           />
         </label>
@@ -63,13 +76,13 @@ class WalletForm extends Component {
           <select
             data-testid="currency-input"
             id="currencyInput"
-            name="currencyInput"
-            value={ currencyInput }
+            name="currency"
+            value={ currency }
             onChange={ this.handleChange }
           >
             {
-              currencies.map((currency) => (
-                <option value={ currency } key={ currency }>{currency}</option>
+              currencies.map((coin) => (
+                <option value={ coin } key={ coin }>{coin}</option>
               ))
             }
           </select>
@@ -79,8 +92,8 @@ class WalletForm extends Component {
           <select
             data-testid="method-input"
             id="methodInput"
-            name="methodInput"
-            value={ methodInput }
+            name="method"
+            value={ method }
             onChange={ this.handleChange }
           >
             <option value="Dinheiro">Dinheiro</option>
@@ -93,8 +106,8 @@ class WalletForm extends Component {
           <select
             data-testid="tag-input"
             id="tagInput"
-            name="tagInput"
-            value={ tagInput }
+            name="tag"
+            value={ tag }
             onChange={ this.handleChange }
           >
             <option value="Alimentação">Alimentação</option>
@@ -104,6 +117,13 @@ class WalletForm extends Component {
             <option value="Saúde">Saúde</option>
           </select>
         </label>
+        <button
+          id="add-expense"
+          type="button"
+          onClick={ this.handleClick }
+        >
+          Adicionar despesa
+        </button>
       </form>
     );
   }
@@ -115,10 +135,12 @@ const mapStateToProps = (store) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getArrayCurrencies: () => dispatch(getCurrencies()),
+  saveWalletState: (object) => dispatch(saveWallet(object)),
 });
 
 WalletForm.propTypes = {
   getArrayCurrencies: PropTypes.func.isRequired,
+  saveWalletState: PropTypes.func.isRequired,
   currencies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };
 
