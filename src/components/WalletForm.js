@@ -11,7 +11,7 @@ class WalletForm extends Component {
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
-      tag: 'Alimentação',
+      tag: 'alimentação',
     };
   }
 
@@ -34,7 +34,7 @@ class WalletForm extends Component {
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
-      tag: 'Alimentação',
+      tag: 'alimentação',
     });
   }
 
