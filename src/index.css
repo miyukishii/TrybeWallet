@@ -106,8 +106,9 @@ code {
 
 .table-wallet {
   width: 100%;
+  align-items: center;
 }
 
-table, th {
+table, th, td {
   border: 1px solid black;
 }

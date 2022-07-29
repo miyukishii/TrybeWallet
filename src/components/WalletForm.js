@@ -11,7 +11,7 @@ class WalletForm extends Component {
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
-      tag: 'Aimentação',
+      tag: 'Alimentação',
     };
   }
 
@@ -34,7 +34,7 @@ class WalletForm extends Component {
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
-      tag: 'Aimentação',
+      tag: 'Alimentação',
     });
   }
 
@@ -53,7 +53,7 @@ class WalletForm extends Component {
           Valor
           <input
             data-testid="value-input"
-            type="text"
+            type="number"
             id="valueInput"
             name="value"
             value={ value }
