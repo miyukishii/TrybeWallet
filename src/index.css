@@ -112,3 +112,17 @@ code {
 table, th, td {
   border: 1px solid black;
 }
+
+.buttons-table {
+  display: flex;
+}
+
+#delete-btn {
+  background-color: red;
+  color: white;
+}
+
+#edit-btn {
+  background-color: green;
+  color: white;
+}

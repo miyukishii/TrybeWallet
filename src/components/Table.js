@@ -25,7 +25,7 @@ class Table extends React.Component {
           {
             expenses.map((expense) => (
               <ExpenseItem
-                key={ expense.description }
+                key={ expense.id }
                 expense={ expense }
               />
             ))
