@@ -22,6 +22,16 @@ class ExpenseItem extends Component {
         <td>Real</td>
         <td className="buttons-table">
           <button
+            data-testid="edit-btn"
+            id="edit-btn"
+            type="button"
+            onClick={ () => {
+              editItem(expense.id);
+            } }
+          >
+            Editar
+          </button>
+          <button
             data-testid="delete-btn"
             id="delete-btn"
             type="button"
@@ -30,16 +40,6 @@ class ExpenseItem extends Component {
             } }
           >
             Excluir
-          </button>
-          <button
-            data-testid="edit-btn"
-            id="edit-btn"
-            type="button"
-            onClick={ () => {
-              editItem(expense.id);
-            } }
-          >
-            Editar despesa
           </button>
         </td>
       </tr>

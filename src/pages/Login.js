@@ -51,9 +51,9 @@ class Login extends React.Component {
           <h1 id="app-name">Trybe Wallet</h1>
           <div className="inputs-login">
             <label htmlFor="emailInput">
-              E-mail
               <input
                 data-testid="email-input"
+                placeholder="E-mail"
                 type="email"
                 id="emailInput"
                 name="emailInput"
@@ -62,9 +62,9 @@ class Login extends React.Component {
               />
             </label>
             <label htmlFor="passwordInput">
-              Password
               <input
                 data-testid="password-input"
+                placeholder="Password"
                 type="password"
                 id="passwordInput"
                 name="passwordInput"

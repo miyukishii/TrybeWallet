@@ -9,7 +9,7 @@ class Table extends React.Component {
     return (
       <table className="table-wallet">
         <thead>
-          <tr>
+          <tr className="cells-table">
             <th>Descrição</th>
             <th>Tag</th>
             <th>Método de pagamento</th>
