@@ -1,16 +1,20 @@
-# 🚧 README em construção 🚧
+## **Bem-vindo ao repositório do projeto Trybe Wallet!**
 
-<!-- Olá, Tryber!
+### Screenshots
+![Screenshot da tela inicial](screenshot-trybewallet.png)
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+### Contexto
+No projeto Trybe Wallet foi desenvolvido uma aplicação totalmente intuitiva de gerenciamento de despesas com conversor de moeda que pode ser definido pelo usuário. É possível visualizar uma tabela de gastos, e além disso podendo remover e editar essas despesas.
 
-É essencial que você preencha esse documento por conta própria, ok?
+### Tecnologias utilizadas
+Projeto desenvolvido utilizando React, Redux como gerenciador de estados globais da aplicação, CSS3 e React Testing Library. A aplicação web ainda consome os dados da <a href="https://economia.awesomeapi.com.br/json/all">API</a> do awesomeapi API de Cotações para realizar a busca de câmbio de moedas.
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+### Como utilizar a aplicação
+- Dê um git clone no repositório do projet;
+- Entre na pasta da aplicação e instale as dependências com npm install e inicie a página com npm start;
+- Na página de Login digite um e-mail válido (não precisa ser real). Ex: nome@domínio.com;
+- Digite ainda uma senho com no mínimo 6 dígitos da sua preferência;
+- Ou acesse o link do deploy <a href="https://trybe-wallet-lovat.vercel.app/">Aqui</a>
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+##### Observações:
+###### Este projeto foi requisitado pela Trybe ao longo da formação do curso de Desenvolvimento Web, para avaliação do conhecimento adquirido nos módulos de Fundamentos. Todos os aquivos dentro da pasta src foram desenvolvidas por mim e os outros arquivos foram desenvolvidas pela Trybe.
