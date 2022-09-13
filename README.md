@@ -10,10 +10,10 @@ No projeto Trybe Wallet foi desenvolvido uma aplicação totalmente intuitiva de
 Projeto desenvolvido utilizando React, Redux como gerenciador de estados globais da aplicação, CSS3 e React Testing Library. A aplicação web ainda consome os dados da <a href="https://economia.awesomeapi.com.br/json/all">API</a> do awesomeapi API de Cotações para realizar a busca de câmbio de moedas.
 
 ### Como utilizar a aplicação
-- Dê um git clone no repositório do projet;
+- Dê um git clone no repositório do projeto;
 - Entre na pasta da aplicação e instale as dependências com npm install e inicie a página com npm start;
-- Na página de Login digite um e-mail válido (não precisa ser real). Ex: nome@domínio.com;
-- Digite ainda uma senho com no mínimo 6 dígitos da sua preferência;
+- Na página de Login digite um e-mail válido. Ex: nome@domínio.com;
+- Digite ainda uma senha com no mínimo 6 dígitos da sua preferência;
 - Ou acesse o link do deploy <a href="https://trybe-wallet-lovat.vercel.app/">Aqui</a>
 
 ##### Observações:
