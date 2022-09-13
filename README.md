@@ -11,7 +11,7 @@ Projeto desenvolvido utilizando React, Redux como gerenciador de estados globais
 
 ### Como utilizar a aplicação
 - Dê um git clone no repositório do projeto;
-- Entre na pasta da aplicação e instale as dependências com npm install e inicie a página com npm start;
+- Entre na pasta da aplicação, instale as dependências com npm install e inicie a página com npm start;
 - Na página de Login digite um e-mail válido. Ex: nome@domínio.com;
 - Digite ainda uma senha com no mínimo 6 dígitos da sua preferência;
 - Ou acesse o link do deploy <a href="https://trybe-wallet-lovat.vercel.app/">Aqui</a>
